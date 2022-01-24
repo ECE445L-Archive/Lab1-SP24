@@ -1,5 +1,7 @@
-# EE445L-SP22-Lab-Template
-Template for EE445L SP22 Labs.
+# EE445L-SP22-Lab1
+Template for EE445L SP22 Lab 1. 
+
+IMPORTANT: To clone this repository, click the green "Use this template" button and create a PRIVATE repository. Do NOT clone this repository as you would normally clone a git repo (i.e. using 'git clone ...') because you will not be able to make a private fork.
 
 ## HW
 
