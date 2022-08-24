@@ -72,9 +72,9 @@
 // CS   - PA3 TFT_CS, active low to enable TFT
 // *CS  - (NC) SDC_CS, active low to enable SDC
 // MISO - (NC) MISO SPI data from SDC to microcontroller
-// SDA  – (NC) I2C data for ADXL345 accelerometer
-// SCL  – (NC) I2C clock for ADXL345 accelerometer
-// SDO  – (NC) I2C alternate address for ADXL345 accelerometer
+// SDA  ï¿½ (NC) I2C data for ADXL345 accelerometer
+// SCL  ï¿½ (NC) I2C clock for ADXL345 accelerometer
+// SDO  ï¿½ (NC) I2C alternate address for ADXL345 accelerometer
 // Backlight + - Light, backlight connected to +3.3 V
 
 // **********wide.hk ST7735R with ADXL335 accelerometer *******************
@@ -88,9 +88,9 @@
 // CS   - PA3 TFT_CS, active low to enable TFT
 // *CS  - (NC) SDC_CS, active low to enable SDC
 // MISO - (NC) MISO SPI data from SDC to microcontroller
-// X– (NC) analog input X-axis from ADXL335 accelerometer
-// Y– (NC) analog input Y-axis from ADXL335 accelerometer
-// Z– (NC) analog input Z-axis from ADXL335 accelerometer
+// Xï¿½ (NC) analog input X-axis from ADXL335 accelerometer
+// Yï¿½ (NC) analog input Y-axis from ADXL335 accelerometer
+// Zï¿½ (NC) analog input Z-axis from ADXL335 accelerometer
 // Backlight + - Light, backlight connected to +3.3 V
 
 // **********HiLetgo ST7735 TFT and SDC (SDC not tested)*******************
@@ -1940,7 +1940,7 @@ void ST7735_uBinOut6(uint32_t n){
  * @note Assumes minX < maxX, and minY < maxY.
  */
 void ST7735_XYplotInit(char *title, int32_t minX, int32_t maxX, int32_t minY, int32_t maxY){
-    /* TODO (EE445L Lab 1): complete this. */
+    /* TODO (ECE445L Lab 1): complete this. */
 }
 
 /**
@@ -1949,11 +1949,12 @@ void ST7735_XYplotInit(char *title, int32_t minX, int32_t maxX, int32_t minY, in
  * @param num  Number of data points in the two arrays.
  * @param bufX Array of 32-bit fixed-point data, resolution=1/32.
  * @param bufY Array of 32-bit fixed-point data, resolution=1/32.
+ * @param color 16-bit color of the data points
  * @note Assumes ST7735_XYplotInit has been previously called, and should ignore
  *       all points beyond the minX, maxX, minY, maxY bounds.
  */
-void ST7735_XYplot(uint32_t num, int32_t bufX[], int32_t bufY[]){
-    /* TODO (EE445L Lab 1): complete this. */
+void ST7735_XYplot(uint32_t num, int32_t bufX[], int32_t bufY[], uint16_t color) {
+    /* TODO (ECE445L Lab 1): complete this. */
 }
 
 // plotLine function that is used when dx is greater than dy

@@ -7,12 +7,12 @@
  *    Feel free to edit this to match your specifications.
  *
  *    For this lab, the student must implement four functions:
- *       - ST7735_sDecOut3   (Defined in fixed.h L19)
- *       - ST7735_uBinOut5   (Defined in fixed.h L38)
- *       - ST7735_XYplotInit (Defined in ST7735.h L557)
- *       - ST7735_XYplot     (Defined in ST7735.h L570)
- * @version 0.1
- * @date 2022-01-19 <REPLACE WITH DATE OF LAST REVISION>
+ *       - ST7735_sDecOut3   (Defined in ./fixed.h L19)
+ *       - ST7735_uBinOut5   (Defined in ./fixed.h L38)
+ *       - ST7735_XYplotInit (Defined in inc/ST7735.h L557)
+ *       - ST7735_XYplot     (Defined in inc/ST7735.h L570)
+ * @version 1.1.0
+ * @date 2022-08-24 <REPLACE WITH DATE OF LAST REVISION>
  *
  * @copyright Copyright (c) 2022
  * @note Pinout:
@@ -126,6 +126,7 @@ int main(void) {
     PortF_Init();
     ST7735_InitR(INITR_REDTAB);
     while(1) {
+        /* Plot sDecOut3 results. */
         ST7735_FillScreen(ST7735_BLACK);
         ST7735_SetCursor(0,0);
         printf("Lab 1\rST7735_sDecOut3\r");
@@ -135,6 +136,7 @@ int main(void) {
         }
         Pause();
 
+        /* Plot uBinOut5 results. */
         ST7735_FillScreen(0);  // set screen to black
         ST7735_SetCursor(0,0);
         printf("ST7735_uBinOut5\r");
@@ -144,12 +146,14 @@ int main(void) {
         }
         Pause();
 
+        /* Plot circle. */
         ST7735_XYplotInit("Circle", -2500, 2500, -2500, 2500);
-        ST7735_XYplot(180,(int32_t *)CircleXbuf, (int32_t *)CircleYbuf);
+        ST7735_XYplot(180,(int32_t *)CircleXbuf, (int32_t *)CircleYbuf, ST7735_BLUE);
         Pause();
 
+        /* Plot Star. */
         ST7735_XYplotInit("Star- upper right", -450, 150, -400, 200);
-        ST7735_XYplot(50,(int32_t *)StarXbuf, (int32_t *)StarYbuf);
+        ST7735_XYplot(50,(int32_t *)StarXbuf, (int32_t *)StarYbuf, ST7735_BLUE);
         Pause();
     }
 }

@@ -5,8 +5,8 @@
  * @brief 
  *    Possible implementation file for Lab 1.
  *    Feel free to edit this to match your specifications.
- * @version 0.1
- * @date 2022-01-19 <REPLACE WITH DATE OF LAST REVISION>
+ * @version 1.1.0
+ * @date 2022-08-24 <REPLACE WITH DATE OF LAST REVISION>
  * 
  * @copyright Copyright (c) 2022
  */
@@ -17,9 +17,9 @@
 
 /** Function implementation. */
 void ST7735_sDecOut3(int32_t n) {
-    /* TODO (EE445L Lab 1): complete this. */
+    /* TODO (ECE445L Lab 1): complete this. */
 }
 
 void ST7735_uBinOut5(uint32_t n) {
-    /* TODO (EE445L Lab 1): complete this. */
+    /* TODO (ECE445L Lab 1): complete this. */
 }

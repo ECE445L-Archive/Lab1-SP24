@@ -1,25 +1,0 @@
-Dependencies for Project 'LabTemplate', Target 'Target 1': (DO NOT MODIFY !)
-CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (.\README.md)(0x61E88F92)()
-F (.\Lab1.c)(0x61E8A37E)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ./ --C99-IC:\Users\matth\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DTM4C123GH6PM -Drvmdk -DPART_LM4F120H5QR-o .\objects\lab1.o --omf_browse .\objects\lab1.crf --depend .\objects\lab1.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8EF392)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
-I (./inc/ST7735.h)(0x61E8A2F8)
-I (./inc/PLL.h)(0x61E87F16)
-I (./inc/tm4c123gh6pm.h)(0x61E87F17)
-I (./fixed.h)(0x61E8A2CD)
-F (.\fixed.h)(0x61E8A2CD)()
-F (.\inc\ST7735.c)(0x61E8A373)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ./ --C99-IC:\Users\matth\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DTM4C123GH6PM -Drvmdk -DPART_LM4F120H5QR-o .\objects\st7735.o --omf_browse .\objects\st7735.crf --depend .\objects\st7735.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8EF392)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8EF392)
-I (inc\ST7735.h)(0x61E8A2F8)
-I (inc\../inc/tm4c123gh6pm.h)(0x61E87F17)
-F (.\inc\PLL.c)(0x61E87F16)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ./ --C99-IC:\Users\matth\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DTM4C123GH6PM -Drvmdk -DPART_LM4F120H5QR-o .\objects\pll.o --omf_browse .\objects\pll.crf --depend .\objects\pll.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
-I (inc\../inc/PLL.h)(0x61E87F16)
-I (inc\../inc/tm4c123gh6pm.h)(0x61E87F17)
-F (.\inc\startup.s)(0x6153C61D)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Users\matth\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 533" --pd "TM4C123GH6PM SETA 1"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
-F (.\fixed.c)(0x61E8A37B)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ./ --C99-IC:\Users\matth\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DTM4C123GH6PM -Drvmdk -DPART_LM4F120H5QR-o .\objects\fixed.o --omf_browse .\objects\fixed.crf --depend .\objects\fixed.d)
-I (fixed.h)(0x61E8A2CD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8EF392)
