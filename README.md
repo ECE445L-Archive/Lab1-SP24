@@ -1,10 +1,10 @@
 # EE445L-F22-Lab1
 Template for EE445L F22 Lab 1. 
 
-IMPORTANT: To clone this repository, click the green "Use this template" button
-and create a PRIVATE repository. Do NOT clone this repository as you would
-normally clone a git repo (i.e. using 'git clone ...') because you will not be
-able to make a private fork. 
+IMPORTANT (for those not using Github Classroom): To clone this repository,
+click the green "Use this template" button and create a PRIVATE repository. Do
+NOT clone this repository as you would normally clone a git repo (i.e. using
+'git clone ...') because you will not be able to make a private fork. 
 
 ## HW
 
