@@ -1933,10 +1933,10 @@ void ST7735_uBinOut6(uint32_t n){
  *        It also draws the title and clears the plot area.
  * 
  * @param title ASCII null terminated string to label the plot.
- * @param minX  Smallest X data value allowed, resolution=1/32.
- * @param maxX  Largest X data value allowed, resolution=1/32.
- * @param minY  Smallest Y data value allowed, resolution=1/32.
- * @param maxY  Largest Y data value allowed, resolution=1/32.
+ * @param minX  Smallest X data value allowed
+ * @param maxX  Largest X data value allowed
+ * @param minY  Smallest Y data value allowed
+ * @param maxY  Largest Y data value allowed
  * @note Assumes minX < maxX, and minY < maxY.
  */
 void ST7735_XYplotInit(char *title, int32_t minX, int32_t maxX, int32_t minY, int32_t maxY){
@@ -1947,8 +1947,8 @@ void ST7735_XYplotInit(char *title, int32_t minX, int32_t maxX, int32_t minY, in
  * @brief ST7735_XYplot plots an array of (x, y) data.
  * 
  * @param num  Number of data points in the two arrays.
- * @param bufX Array of 32-bit fixed-point data, resolution=1/32.
- * @param bufY Array of 32-bit fixed-point data, resolution=1/32.
+ * @param bufX Array of 32-bit fixed-point data
+ * @param bufY Array of 32-bit fixed-point data
  * @param color 16-bit color of the data points
  * @note Assumes ST7735_XYplotInit has been previously called, and should ignore
  *       all points beyond the minX, maxX, minY, maxY bounds.
