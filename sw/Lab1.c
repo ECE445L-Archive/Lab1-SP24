@@ -7,12 +7,12 @@
  *    Feel free to edit this to match your specifications.
  *
  *    For this lab, the student must implement four functions:
- *       - ST7735_sDecOut3   (Defined in ./fixed.h L19)
- *       - ST7735_uBinOut5   (Defined in ./fixed.h L38)
+ *       - ST7735_sDecOut3   (Defined in lib/fixed/fixed.h L19)
+ *       - ST7735_uBinOut5   (Defined in lib/fixed/fixed.h L38)
  *       - ST7735_XYplotInit (Defined in inc/ST7735.h L557)
  *       - ST7735_XYplot     (Defined in inc/ST7735.h L570)
- * @version 1.1.0
- * @date 2022-08-24 <REPLACE WITH DATE OF LAST REVISION>
+ * @version 1.2.0
+ * @date 2022-10-08 <REPLACE WITH DATE OF LAST REVISION>
  *
  * @copyright Copyright (c) 2022
  * @note Pinout:
@@ -34,7 +34,7 @@
 #include "./inc/ST7735.h"
 #include "./inc/PLL.h"
 #include "./inc/tm4c123gh6pm.h"
-#include "./fixed.h"
+#include "./lib/fixed/fixed.h"
 
 
 /** MMAP Pin definitions. */
