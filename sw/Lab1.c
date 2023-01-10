@@ -1,31 +1,31 @@
 /**
- * @file Lab1.c
- * @author your name (you@domain.com), Jonathan Valvano, Matthew Yu
- *    <TA NAME and LAB SECTION # HERE>
- * @brief
- *    Possible main program to test Lab 1.
- *    Feel free to edit this to match your specifications.
- *
- *    For this lab, the student must implement four functions:
- *       - ST7735_sDecOut3   (Defined in lib/fixed/fixed.h L19)
- *       - ST7735_uBinOut5   (Defined in lib/fixed/fixed.h L38)
- *       - ST7735_XYplotInit (Defined in inc/ST7735.h L557)
- *       - ST7735_XYplot     (Defined in inc/ST7735.h L570)
- * @version 1.2.0
- * @date 2022-10-08 <REPLACE WITH DATE OF LAST REVISION>
- *
+ * @file    Lab1.c
+ * @author  your name (you@domain.com), Jonathan Valvano, Matthew Yu, Jared
+ *          McArthur
+ *          <TA NAME and LAB SECTION # HERE>
+ * @version 1.3.0
+ * @date    2023-01-10 <REPLACE WITH DATE OF LAST REVISION>
  * @copyright Copyright (c) 2022
- * @note Pinout:
- *    Backlight (pin 10) connected to +3.3 V
- *    MISO (pin 9) unconnected
- *    SCK (pin 8) connected to PA2 (SSI0Clk)
- *    MOSI (pin 7) connected to PA5 (SSI0Tx)
- *    TFT_CS (pin 6) connected to PA3 (SSI0Fss)
- *    CARD_CS (pin 5) unconnected
- *    Data/Command (pin 4) connected to PA6 (GPIO)
- *    RESET (pin 3) connected to PA7 (GPIO)
- *    VCC (pin 2) connected to +3.3 V
- *    Gnd (pin 1) connected to ground
+ * @brief
+ *          Possible main program to test Lab 1.
+ *          Feel free to edit this to match your specifications.
+ *
+ *          For this lab, the student must implement four functions:
+ *             - ST7735_sDecOut3   (Defined in inc/ST7735.h L1874)
+ *             - ST7735_uBinOut5   (Defined in inc/ST7735.h L1901)
+ *             - ST7735_XYplotInit (Defined in inc/ST7735.h L1986)
+ *             - ST7735_XYplot     (Defined in inc/ST7735.h L2011)
+ * @note    Pinout:
+ *          Backlight (pin 10) connected to +3.3 V
+ *          MISO (pin 9) unconnected
+ *          SCK (pin 8) connected to PA2 (SSI0Clk)
+ *          MOSI (pin 7) connected to PA5 (SSI0Tx)
+ *          TFT_CS (pin 6) connected to PA3 (SSI0Fss)
+ *          CARD_CS (pin 5) unconnected
+ *          Data/Command (pin 4) connected to PA6 (GPIO)
+ *          RESET (pin 3) connected to PA7 (GPIO)
+ *          VCC (pin 2) connected to +3.3 V
+ *          Gnd (pin 1) connected to ground
  */
 
 /** File includes. */
@@ -155,22 +155,6 @@ int main(void) {
         ST7735_XYplotInit("Star- upper right", -450, 150, -400, 200);
         ST7735_XYplot(50,(int32_t *)StarXbuf, (int32_t *)StarYbuf, ST7735_BLUE);
         Pause();
-    }
-}
-
-int main2(void) {
-    PortF_Init();
-    while(1){
-        DelayWait10ms(1);
-        PF2 ^= 0x04;
-    }
-}
-
-int main3(void) {
-    PortF_Init();
-    while(1){
-        DelayWait10ms(100);
-        PF2 ^= 0x04;
     }
 }
 
