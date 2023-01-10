@@ -4,7 +4,13 @@ This is the template project folder for your lab. Feel free to modify the files
 in here, as long as they remain in this folder. This is where TAs will look for
 when running your project and/or inspecting your code for software quality.
 
-## Coding Style
+## Project Structure
+
+- examples: folder containing any unit tests or example projects demonstrating
+  the functionality of your drivers.
+- inc: folder containing any drivers you write or modify from valvanoware
+- lib: folder containing any external drivers written by other third parties
+- src: folder containing your lab project
 
 ## Creating a New Project
 

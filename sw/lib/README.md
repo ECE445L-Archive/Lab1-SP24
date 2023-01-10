@@ -1,5 +1,5 @@
 # Lib Folder
 
-Any drivers that you write for this lab, please put them in this folder. It'll
-make it easier for TAs to evaluate. An example driver is presented for you to
-show you what the syntax style should look like.
+This folder is for external drivers you have sourced from other people. Make
+sure to properly credit them! And check their licenses - using somebody's
+software means you agree to comply with their terms of use.
