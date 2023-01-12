@@ -34,7 +34,6 @@
 #include "./inc/ST7735.h"
 #include "./inc/PLL.h"
 #include "./inc/tm4c123gh6pm.h"
-#include "./lib/fixed/fixed.h"
 
 
 /** MMAP Pin definitions. */
@@ -124,6 +123,9 @@ int main(void) {
     uint32_t i;
     PLL_Init(Bus80MHz);
     PortF_Init();
+		PF2 ^= 0x04;
+		DelayWait10ms(100);
+		PF2 ^= 0x04;
     ST7735_InitR(INITR_REDTAB);
     while(1) {
         /* Plot sDecOut3 results. */
@@ -157,7 +159,6 @@ int main(void) {
         Pause();
     }
 }
-
 
 /** Function Implementations. */
 void DelayWait10ms(uint32_t n) {

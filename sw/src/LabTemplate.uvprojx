@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>Target 1</TargetName>
+      <TargetName>Lab 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>6180000::V6.18::ARMCLANG</pCCUsed>
@@ -49,7 +49,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>LabTemplate</OutputName>
+          <OutputName>Lab1</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>./</IncludePath>
+              <IncludePath>./;..</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -385,39 +385,24 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>README.md</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\README.md</FilePath>
-            </File>
-            <File>
               <FileName>Lab1.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Lab1.c</FilePath>
             </File>
             <File>
-              <FileName>fixed.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\fixed.h</FilePath>
+              <FileName>PLL.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\inc\PLL.c</FilePath>
             </File>
             <File>
               <FileName>ST7735.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\inc\ST7735.c</FilePath>
-            </File>
-            <File>
-              <FileName>PLL.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\inc\PLL.c</FilePath>
+              <FilePath>..\inc\ST7735.c</FilePath>
             </File>
             <File>
               <FileName>startup.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\inc\startup.s</FilePath>
-            </File>
-            <File>
-              <FileName>fixed.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\fixed.c</FilePath>
+              <FilePath>..\inc\startup.s</FilePath>
             </File>
           </Files>
         </Group>
