@@ -3,8 +3,8 @@
  * @author  your name (you@domain.com), Jonathan Valvano, Matthew Yu, Jared
  *          McArthur
  *          <TA NAME and LAB SECTION # HERE>
- * @version 1.3.0
- * @date    2023-01-10 <REPLACE WITH DATE OF LAST REVISION>
+ * @version 1.3.1
+ * @date    2023-01-26 <REPLACE WITH DATE OF LAST REVISION>
  * @copyright Copyright (c) 2022
  * @brief
  *          Possible main program to test Lab 1.
