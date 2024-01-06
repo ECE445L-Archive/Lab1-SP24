@@ -4,8 +4,8 @@
  *          McArthur
  *          <TA NAME and LAB SECTION # HERE>
  * @version 1.3.1
- * @date    2023-01-26 <REPLACE WITH DATE OF LAST REVISION>
- * @copyright Copyright (c) 2022
+ * @date    2024-01-06 <REPLACE WITH DATE OF LAST REVISION>
+ * @copyright Copyright (c) 2024
  * @brief
  *          Possible main program to test Lab 1.
  *          Feel free to edit this to match your specifications.
