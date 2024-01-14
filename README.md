@@ -1,6 +1,6 @@
 # ECE445L-Lab1
 
-ECE445L Lab 1 Spring 2023.
+ECE445L Lab 1 Spring 2024.
 
 IMPORTANT (for those not using Github Classroom): To clone this repository,
 click the green "Use this template" button and create a PRIVATE repository. Do
