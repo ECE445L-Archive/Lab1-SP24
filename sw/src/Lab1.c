@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "../inc/tm4c123gh6pm.h"
-#include "../inc/pll.h"
+#include "../inc/PLL.h"
 #include "../inc/ST7735.h"
 #include "Lab1Grader.h"
 
@@ -67,7 +67,8 @@ int main6(void){ //main6 use to debug Convert
   DisableInterrupts();
   PLL_Init(Bus80MHz);
   UART0_Init(); // serial data to PC
-  for(uint32_t TrueR2 = 500; TrueR2<=4000; TrueR2+=500){
+  uint32_t TrueR2;
+  for(TrueR2 = 500; TrueR2<=4000; TrueR2+=500){
     Data = (4095*TrueR2)/(R1+TrueR2); // simulate circuit and ADC
     R2 = Convert(Data);   // your function
     UART0_OutString("True R2 ="); UART0_OutUDec(TrueR2);

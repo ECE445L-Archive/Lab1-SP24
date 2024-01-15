@@ -83,6 +83,8 @@ dkms.conf
 *.lib
 *.obj
 *.o
+# For Lab 1, we want the autograder not to be ignored
+!lab1Grader.o
 *.sbr
 
 # Build files
